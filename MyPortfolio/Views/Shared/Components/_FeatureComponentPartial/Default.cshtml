@@ -1,0 +1,45 @@
+﻿@model List<MyPortfolio.DataAccessLayer.Entities.Feature>
+
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://i.hizliresim.com/me8wrpp.jpg?_gl=1*1y3lpz3*_ga*MTYyNTUzNDExMi4xNzMyMDA5OTI5*_ga_M9ZRXYS2YN*MTczMjAwOTkyOC4xLjEuMTczMjAwOTk0NS40My4wLjA." data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    @foreach(var item in Model)
+    {
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>@item.Title</h3>
+
+                <h1>@item.Description</h1>
+
+                <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        Hakkımda
+                    </a>
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                       Son Projelerim
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+
+    <ul class="home-social">
+        <li>
+            <a href="https://www.instagram.com/cagricamyar/"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+        </li>
+        <li>
+            <a href="https://x.com/cagricamyr"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+        </li>     
+        <li>
+            <a href="https://www.linkedin.com/in/cagricamyar/"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+        </li>
+        <li>
+            <a href="https://github.com/cagricamyar"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+        </li>
+    </ul>
+
+</section> 
